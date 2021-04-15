@@ -31,6 +31,9 @@ $ python manage.py runserver
 
 No admin é onde você cadastra seus alunos(as)
 ```
+<b>Sumário</br>
+-API's básico, Serializer e Auth Basic
+-Versionamento, Níveis e permissões de usuário, limit no númer de request, integração de um front-end com React (BFF)
 
 # :art: Layout
 
