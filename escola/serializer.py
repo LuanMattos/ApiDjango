@@ -4,8 +4,7 @@ from escola.models import Aluno, Curso, Matricula
 class AlunoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Aluno
-        fields = ['id','nome','cpf','rg','data_nascimento']
-
+        fields = ['id', 'nome', 'rg', 'cpf', 'data_nascimento']
 
 class CursoSerializer(serializers.ModelSerializer):
     class Meta:
@@ -16,17 +15,17 @@ class MatriculaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Matricula
         exclude = []
-        
+
 class ListaMatriculasAlunoSerializer(serializers.ModelSerializer):
     curso = serializers.ReadOnlyField(source='curso.descricao')
     periodo = serializers.SerializerMethodField()
     class Meta:
         model = Matricula
-        fields = ['curso','periodo']
-    def get_periodo(self,obj):
+        fields = ['curso', 'periodo']
+    def get_periodo(self, obj):
         return obj.get_periodo_display()
 
-class ListaAlunosMatriculadosCursoSerializer(serializers.ModelSerializer):
+class ListaAlunosMatriculadosSerializer(serializers.ModelSerializer):
     aluno_nome = serializers.ReadOnlyField(source='aluno.nome')
     class Meta:
         model = Matricula
