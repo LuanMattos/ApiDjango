@@ -35,8 +35,13 @@ No admin é onde você cadastra seus alunos(as)
 -API's básico, Serializer e Auth Basic
 <br>
 -Versionamento, Níveis e permissões de usuário, limit no número de request, integração de um front-end com React (BFF)
+<br>
 
-# :art: Layout
+
+# :art: Layout dos Endpoints
+<br>
+
+![alt text](https://github.com/LuanMattos/ApiDjango/blob/main/anotacoes/i.png "Screenshot 1")
 
 
 
