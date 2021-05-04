@@ -34,7 +34,7 @@ class MatriculaViewSet(viewsets.ModelViewSet):
     serializer_class = MatriculaSerializer
     http_method_names = ['get','post','put','path']
 
-    @method_decorator(cache_page(50))
+    @method_decorator(cache_page(20))
     def dispatch(self, *args, **kwargs):
         return super(MatriculaViewSet, self).dispatch(*args,**kwargs)
 
