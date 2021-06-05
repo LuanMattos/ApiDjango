@@ -51,7 +51,6 @@ No admin é onde você cadastra seus alunos(as)
 # :art: Layout dos Endpoints
 <br>
 
-![alt text](https://github.com/LuanMattos/ApiDjango/blob/main/anotacoes/ai.png "Screenshot 1")
 
 
 
